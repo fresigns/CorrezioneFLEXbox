@@ -1,25 +1,58 @@
-body *{
-    box-sizing: border-box;
-    /* display: flex;
-    border: 1px solid crimson; */
-
+body *{ /* sovrascrivere delle impostazioni per tutti gli elementi, specifico tutti i tag dentro body */
+    box-sizing: border-box; 
 }
+
 body{
-    display: flex;
-    background-color: blue;
+    display: flex; /*dispone gli elementi in orizzontale*/
+    background-color: #004494;
     height: 100%;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-main-box{ /**/
+hr{
+    width: 100%;
+}
+
+h2, h3{
+    margin: 8px 0px; /* top-bottom left-right*/
+}
+
+p{
+    margin: 4px 0px; /* top-bottom left-right*/
+}
+
+.main-box{
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
-    width: 900px;
+    /* width: 900px; */
     height: 850px;
+/* --- mobile, definisco la max-width e commento la width --- */
+    max-width: 1000px;
+    
+}
+.row{
+    /* border: 1px solid yellow; */
+    display: flex;
+    gap: 32px;
+/*--- mobile ----------------------------*/
+    flex-wrap: wrap;
 }
 
-.row{
-    border: 1px solid yellow;
+.column{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+/*--- mobile ----------------------------*/
+    min-width: 300px;
 }
+
+/* .bordered{
+    border-top: 5px solid orange;
+    border-bottom: 5px solid orange;
+} */
+
